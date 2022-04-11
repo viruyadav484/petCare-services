@@ -1,0 +1,57 @@
+<!-- Modal -->
+<div class="modal fade" id="registration" role="dialog">
+    <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+        <div class="modal-header">
+        <h4 class="modal-title">Register Here</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <form method="post" action="/register">
+           <div class="modal-body">
+                  <div class="form-group">
+                      <label for="name">Name:</label>
+                      <input type="text" class="form-control" id="name" name="name">
+                    </div>
+                  <div class="form-group">
+                    <label for="email">Email address:</label>
+                    <input type="email" class="form-control" id="email" name="email">
+                  </div>
+                  <div class="form-group">
+                    <label for="pwd">Password:</label>
+                    <input type="password" class="form-control" id="pwd" name="password">
+                  </div>
+                  <div class="form-group">
+                      <label for="mobile">Mobile:</label>
+                      <input type="text" class="form-control" id="mobile" name="mobile">
+                    </div>
+                    <div class="form-group">
+                      <label for="address">Address:</label>
+                      <textarea name="address" class="form-control" id="address" rows="4"></textarea>
+                    </div>
+                    <div class="form-group">
+                      <label for="city">City:</label>
+                      <select name="city"  class="form-control"  id="city">
+                          <option value="">Select City</option>
+                          <option value="indore">Indore</option>
+                          <option value="bhopal">Bhopal</option>
+                          <option value="ujjain">ujjain</option>
+                          <option value="jabalpur">jabalpur</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="gender">Gender:</label> &nbsp;
+                      Male <input type="radio" id="male" name="gender" value="male">&nbsp; &nbsp; 
+                      Female <input type="radio" id="female" name="gender" value="female">
+                    </div>
+         
+        </div>
+        <div class="modal-footer">
+            <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+        <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+        </div>
+      </form>
+    </div>
+    
+    </div>
+</div>
